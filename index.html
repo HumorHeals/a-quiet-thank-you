@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>A Quiet Note of Appreciation</title>
 
-  <!-- Script font for your name -->
   <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
 
   <style>
@@ -16,29 +15,26 @@
       max-width: 700px;
       margin: 0 auto;
       line-height: 1.6;
+      text-align: center;
     }
 
     .rose {
-      text-align: center;
       font-size: 42px;
       margin-bottom: 25px;
     }
 
     h2 {
-      text-align: center;
       font-weight: normal;
       margin-bottom: 18px;
       letter-spacing: 0.03em;
     }
 
     p {
-      text-align: center;
       margin-bottom: 18px;
     }
 
     .closing {
       margin-top: 30px;
-      text-align: center;
     }
 
     .signature {
@@ -48,97 +44,10 @@
       margin-top: 6px;
     }
 
-    /* DOG SECTION */
-
-    .dog-wrapper {
-      margin: 40px auto 10px;
-      text-align: center;
-    }
-
-    .dog-silhouette {
-      position: relative;
-      width: 180px;
-      height: 90px;
-      margin: 0 auto;
-    }
-
-    /* Body */
-    .dog-body {
-      position: absolute;
-      width: 140px;
-      height: 45px;
-      background: #2f2f2f;
-      border-radius: 40px;
-      top: 30px;
-      left: 20px;
-    }
-
-    /* Head */
-    .dog-head {
-      position: absolute;
-      width: 45px;
-      height: 45px;
-      background: #2f2f2f;
-      border-radius: 50%;
-      top: 20px;
-      left: 0;
-    }
-
-    /* Ears */
-    .dog-ear {
-      position: absolute;
-      width: 22px;
-      height: 32px;
-      background: #2f2f2f;
-      border-radius: 50%;
-      top: 30px;
-    }
-
-    .dog-ear.left {
-      left: 5px;
-      transform: rotate(-20deg);
-    }
-
-    .dog-ear.right {
-      left: 20px;
-      transform: rotate(20deg);
-    }
-
-    /* Tail */
-    .dog-tail {
-      position: absolute;
-      width: 18px;
-      height: 8px;
-      background: #2f2f2f;
-      border-radius: 20px;
-      top: 40px;
-      right: 0;
-      transform: rotate(25deg);
-    }
-
-    /* Eyes */
-    .eye {
-      position: absolute;
-      width: 8px;
-      height: 8px;
-      background: #bfe3ff;
-      border-radius: 50%;
-      box-shadow: 0 0 4px rgba(150, 200, 255, 0.9);
-      top: 35px;
-    }
-
-    .eye.left {
-      left: 12px;
-    }
-
-    .eye.right {
-      left: 22px;
-    }
-
-    /* Bone */
-    .dog-bone {
-      font-size: 22px;
-      margin-top: 6px;
+    /* Bone styling */
+    .bone {
+      font-size: 32px;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -159,19 +68,7 @@
     <span class="signature">Sarah</span>
   </div>
 
-  <div class="dog-wrapper">
-    <div class="dog-silhouette">
-      <div class="dog-body"></div>
-      <div class="dog-head"></div>
-      <div class="dog-ear left"></div>
-      <div class="dog-ear right"></div>
-      <div class="dog-tail"></div>
-      <div class="eye left"></div>
-      <div class="eye right"></div>
-    </div>
-    <div class="dog-bone">🦴</div>
-  </div>
+  <div class="bone">🦴</div>
 
 </body>
 </html>
-
