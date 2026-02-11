@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You</title>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f5f2f4;
+      font-family: 'Libre Baskerville', serif;
+      color: #2b2b2b;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+      max-width: 640px;
+      width: 90%;
+      padding: 40px 36px 32px;
+      border: 1px solid #e3dde4;
+    }
+
+    .rose {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .rose-caption {
+      text-align: center;
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #a03b4b;
+      margin-bottom: 26px;
+    }
+
+    .divider {
+      width: 70px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, #c7b0c7, transparent);
+      margin: 0 auto 26px;
+    }
+
+    .headline {
+      text-align: center;
+      font-size: 22px;
+      margin-bottom: 18px;
+      letter-spacing: 0.04em;
+    }
+
+    .subtext {
+      text-align: center;
+      font-size: 15px;
+      line-height: 1.7;
+      color: #4b4b4b;
+      margin-bottom: 30px;
+    }
+
+    .dog-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      margin-bottom: 26px;
+    }
+
+    .dog-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #5f5f5f, #2f2f2f);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .eye {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #cde7ff;
+      box-shadow: 0 0 4px rgba(173, 216, 255, 0.9);
+      position: absolute;
+      top: 32px;
+    }
+
+    .eye.left {
+      left: 28px;
+    }
+
+    .eye.right {
+      right: 28px;
+    }
+
+    .bone {
+      position: absolute;
+      bottom: 18px;
+      font-size: 20px;
+      transform: rotate(-12deg);
+    }
+
+    .dog-text {
+      max-width: 320px;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .signature-block {
+      margin-top: 10px;
+      text-align: right;
+    }
+
+    .signature-label {
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #8a7a8a;
+      margin-bottom: 4px;
+    }
+
+    .signature-name {
+      font-family: 'Parisienne', cursive;
+      font-size: 40px;
+      color: #2b2b2b;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 30px 22px 26px;
+      }
+      .dog-row {
+        flex-direction: column;
+        text-align: center;
+      }
+      .signature-name {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="rose">🌹</div>
+    <div class="rose-caption">A quiet note of appreciation</div>
+
+    <div class="divider"></div>
+
+    <div class="headline">Thank you for your time and consideration.</div>
+
+    <p class="subtext">
+      I appreciated the opportunity to speak with you and to learn more about the work you do.  
+      This is just a small, simple way to say thank you.
+    </p>
+
+    <div class="dog-row">
+      <div class="dog-avatar" aria-hidden="true">
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="bone">🦴</div>
+      </div>
+      <div class="dog-text">
+        This is <strong>Rachel</strong>, my charcoal-colored dog with bright blue eyes.  
+        She asked me to add one more message:<br><br>
+        <em>“I would very much like to meet you.”</em>
+      </div>
+    </div>
+
+    <div class="signature-block">
+      <div class="signature-label">With appreciation,</div>
+      <div class="signature-name">Sarah</div>
+    </div>
+  </div>
+</body>
+</html>
