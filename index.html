@@ -48,89 +48,93 @@
       margin-top: 6px;
     }
 
-    /* Dog placement */
+    /* Dog wrapper */
     .dog-wrapper {
       margin: 40px auto 10px;
       text-align: center;
     }
 
-    /* Dog silhouette */
+    /* Dog silhouette container */
     .dog-silhouette {
-      width: 170px;
-      height: 90px;
-      margin: 0 auto;
-      background: #2f2f2f;
       position: relative;
-      clip-path: path("M10 55 
-                       Q5 45 18 38 
-                       L30 30 
-                       Q40 20 60 25 
-                       L90 30 
-                       Q120 20 145 32 
-                       Q160 40 160 55 
-                       Q160 70 145 75 
-                       Q120 85 90 78 
-                       L60 72 
-                       Q40 68 30 62 
-                       Q18 58 10 55 Z");
+      width: 160px;
+      height: 70px;
+      margin: 0 auto;
     }
 
-    /* Floppy ears */
-    .dog-silhouette::before,
+    /* Body */
+    .dog-silhouette::before {
+      content: "";
+      position: absolute;
+      width: 160px;
+      height: 45px;
+      background: #2f2f2f;
+      border-radius: 40px;
+      top: 20px;
+      left: 0;
+    }
+
+    /* Head */
     .dog-silhouette::after {
       content: "";
       position: absolute;
-      top: -8px;
-      width: 32px;
+      width: 45px;
       height: 45px;
       background: #2f2f2f;
-      border-radius: 50% 50% 60% 60%;
+      border-radius: 50%;
+      top: 10px;
+      left: 0;
     }
 
-    .dog-silhouette::before {
-      left: 22px;
-      transform: rotate(-18deg);
+    /* Ears */
+    .dog-ear {
+      position: absolute;
+      width: 22px;
+      height: 32px;
+      background: #2f2f2f;
+      border-radius: 50%;
+      top: 20px;
     }
 
-    .dog-silhouette::after {
-      left: 58px;
-      transform: rotate(18deg);
+    .dog-ear.left {
+      left: 5px;
+      transform: rotate(-20deg);
+    }
+
+    .dog-ear.right {
+      left: 20px;
+      transform: rotate(20deg);
     }
 
     /* Tail */
-    .dog-silhouette::tail;
-
-    .dog-silhouette::after;
-
-    .dog-silhouette::tail {
-      content: "";
+    .dog-tail {
       position: absolute;
-      right: -10px;
-      top: 40px;
       width: 18px;
       height: 8px;
       background: #2f2f2f;
-      border-radius: 50% 20% 20% 50%;
+      border-radius: 20px;
+      top: 30px;
+      right: -10px;
       transform: rotate(25deg);
     }
 
     /* Eyes */
     .eye {
       position: absolute;
-      top: 38px;
-      width: 10px;
-      height: 10px;
+      width: 8px;
+      height: 8px;
       background: #bfe3ff;
       border-radius: 50%;
-      box-shadow: 0 0 6px rgba(150, 200, 255, 0.9);
+      box-shadow: 0 0 4px rgba(150, 200, 255, 0.9);
+      top: 25px;
     }
 
     .eye.left {
-      left: 38px;
+      left: 12px;
     }
 
     .eye.right {
-      left: 52px;
+      left: 22px;
     }
 
     /* Bone */
@@ -159,6 +163,9 @@
 
   <div class="dog-wrapper">
     <div class="dog-silhouette">
+      <div class="dog-ear left"></div>
+      <div class="dog-ear right"></div>
+      <div class="dog-tail"></div>
       <div class="eye left"></div>
       <div class="eye right"></div>
     </div>
