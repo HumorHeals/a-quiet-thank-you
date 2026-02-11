@@ -48,41 +48,39 @@
       margin-top: 6px;
     }
 
-    /* Dog wrapper */
+    /* DOG SECTION */
+
     .dog-wrapper {
       margin: 40px auto 10px;
       text-align: center;
     }
 
-    /* Dog silhouette container */
     .dog-silhouette {
       position: relative;
-      width: 160px;
-      height: 70px;
+      width: 180px;
+      height: 90px;
       margin: 0 auto;
     }
 
     /* Body */
-    .dog-silhouette::before {
-      content: "";
+    .dog-body {
       position: absolute;
-      width: 160px;
+      width: 140px;
       height: 45px;
       background: #2f2f2f;
       border-radius: 40px;
-      top: 20px;
-      left: 0;
+      top: 30px;
+      left: 20px;
     }
 
     /* Head */
-    .dog-silhouette::after {
-      content: "";
+    .dog-head {
       position: absolute;
       width: 45px;
       height: 45px;
       background: #2f2f2f;
       border-radius: 50%;
-      top: 10px;
+      top: 20px;
       left: 0;
     }
 
@@ -93,7 +91,7 @@
       height: 32px;
       background: #2f2f2f;
       border-radius: 50%;
-      top: 20px;
+      top: 30px;
     }
 
     .dog-ear.left {
@@ -113,8 +111,8 @@
       height: 8px;
       background: #2f2f2f;
       border-radius: 20px;
-      top: 30px;
-      right: -10px;
+      top: 40px;
+      right: 0;
       transform: rotate(25deg);
     }
 
@@ -126,7 +124,7 @@
       background: #bfe3ff;
       border-radius: 50%;
       box-shadow: 0 0 4px rgba(150, 200, 255, 0.9);
-      top: 25px;
+      top: 35px;
     }
 
     .eye.left {
@@ -163,6 +161,8 @@
 
   <div class="dog-wrapper">
     <div class="dog-silhouette">
+      <div class="dog-body"></div>
+      <div class="dog-head"></div>
       <div class="dog-ear left"></div>
       <div class="dog-ear right"></div>
       <div class="dog-tail"></div>
@@ -174,3 +174,4 @@
 
 </body>
 </html>
+
